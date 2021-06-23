@@ -3,16 +3,16 @@ const eqArrays = function(array1, array2) {
   for (let element = 0; element < array1.length; element += 1) {
     if (array1[element] !== array2[element]) {  
       return false;   
-    } 
-    return true;
+    }   
   }
+  return true;
 };
   const assertEqual = function(actual, expected)  {
   if (actual === expected) {
-    console.log(" ✅✅✅ Assertion passed : ${actual} === ${expected} ");
+    console.log(`✅✅✅ Assertion passed : ${actual} === ${expected} `);
   }
   else {
-    console.log(" 🛑🛑🛑 Assertion failed : ${actual} !== ${expected} ");
+    console.log(`🛑🛑🛑 Assertion failed : ${actual} !== ${expected} `);
   }
   };
 

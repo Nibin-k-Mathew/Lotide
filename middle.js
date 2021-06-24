@@ -30,7 +30,7 @@
     }
   };
 
-  // assetEqual function compare the actual and 
+  // assetEqual function 
   const assertArrayEqual = function(array1, array2)  {
     let message = "";
     if (eqArrays(array1,array2)) {

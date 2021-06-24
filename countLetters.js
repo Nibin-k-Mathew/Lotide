@@ -31,9 +31,9 @@ const countletters = function(letters){
       
     }
   }
-  console.dir(y);
+  //console.dir(y);
   return y;
 };
 console.log(countletters("LIGHTHOUSE LABS"));
-console.log(countletters("Sajini Sara Sajan"));
-console.log(countletters("Jonathan Mathew Nibin"));
+// console.log(countletters("Sajini Sara Sajan"));
+// console.log(countletters("Jonathan Mathew Nibin"));

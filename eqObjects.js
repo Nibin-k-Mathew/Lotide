@@ -1,13 +1,16 @@
-const assertEqual = function(actual, expected)  {
-  if (actual === expected) {
-    console.log(" ✅✅✅ Assertion passed");
+const assertEqual = function(actual, expected) {
+  const inspect = require('util').inspect;
+  if (eqObjects(actual, expected)) {
+    console.log(`💚💚💚Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
+  } else {
+    console.log(`💔💔💔Assertion Failed: ${inspect(actual)} !==  ${inspect(expected)}`);
   }
-  else {
-    console.log(" 🛑🛑🛑 Assertion failed");
-  }
-  };
+};
   const eqObjects = function(object1, object2) {
-    if (Object.keys(object1).length !== Object.keys(object2).length) {
+     //make a variable for object 1 and object to store the keys in the object (eg. a: b:)
+    const Obj1 = Object.keys(object1);
+    const Obj2 = Object.keys(object2)
+    if (Obj1.length !== Obj2.length) {
       return false;
     }
     for (let key of Object.keys(object1)) {

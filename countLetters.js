@@ -37,3 +37,6 @@ const countletters = function(letters){
 console.log(countletters("LIGHTHOUSE LABS"));
 // console.log(countletters("Sajini Sara Sajan"));
 // console.log(countletters("Jonathan Mathew Nibin"));
+
+
+

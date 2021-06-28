@@ -20,7 +20,9 @@ const assertEqual = function(actual, expected)  {
     console.log(" 🛑🛑🛑 Assertion failed");
   }
   };
-  const eqArrays = function(array1, array2) {
+  const eqArrays = function(array1,array2) {
+    console.log('array1',array1);
+    console.log('array2',array2);
     if (array1.length !== array2.length) return false;
     for (let element = 0; element < array1.length; element += 1) {
       if (array1[element] !== array2[element]) {  
@@ -30,4 +32,6 @@ const assertEqual = function(actual, expected)  {
     return true;
   };
   //assertEqual(eqArrays(map(["ground", "control", "to", "major", "tom"],results1),[ 'g', 'c', 't', 'm', 't' ]));
-  assertEqual(eqArrays(map(["ground", "control", "to", "major", "tom"],results1),[ 'g', 'c', 't', 'm', 't' ]));
+  // assertEqual(eqArrays(map(["ground", "control", "to", "major", "tom"],results1),[ 'g', 'c', 't', 'm', 't' ]));
+  // console.log(map(["ground", "control", "to", "major", "tom"],results1));
+  eqArrays(map(["ground", "control", "to", "major", "tom"],results1),['g', 'c', 't', 'm', 't']);

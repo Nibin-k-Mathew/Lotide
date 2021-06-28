@@ -17,8 +17,8 @@ const eqArrays = function(array1, array2) {
   };
 
   // TEST CODE
-  assertArrayEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-  AssertArrayEqual(eqArrays([1, 2, 3], [1, 4, 3]), false);
-  AssertArrayEqual(eqArrays([4, 2, 3], [4, 2, 3]), true);
-  AssertArrayEqual(eqArrays([1, 2, 3], [1, 2, 4]), false);
-  AssertArrayEqual(eqArrays([1, 1, 3], [1, 2, 4]), false);
+  assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+  AssertEqual(eqArrays([1, 2, 3], [1, 4, 3]), false);
+  AssertEqual(eqArrays([4, 2, 3], [4, 2, 3]), true);
+  AssertEqual(eqArrays([1, 2, 3], [1, 2, 4]), false);
+  AssertEqual(eqArrays([1, 1, 3], [1, 2, 4]), false);

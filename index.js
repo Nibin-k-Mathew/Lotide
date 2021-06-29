@@ -16,20 +16,19 @@ const countLetters = require('./countLetters');
 const map = require('./map');
 
 module.exports = {
-head: head,
-tail: tail,
-middle: middle,
-assertArrayEqual: assertArrayEqual,
-assertEqual: assertEqual,
-assertObjectsEqual : assertObjectsEqual,
-eqArrays: eqArrays,
-eqObjects: eqObjects,
-findKey: findKey,
-findKeyByValue: findKeyByValue,
-takeUntil: takeUntil,
-without: without,
-letterPositions: letterPositions,
-countLetters: countLetters,
-map: map
-
+head,
+tail,
+middle,
+assertArrayEqual,
+assertEqual,
+assertObjectsEqual, 
+eqArrays,
+eqObjects,
+findKey,
+findKeyByValue,
+takeUntil,
+without,
+letterPositions,
+countLetters,
+map
 };
